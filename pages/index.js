@@ -127,7 +127,7 @@ export default function Home() {
           Assista esse trecho de uma de nossas aulas e entenda porque nós somos a plataforma sobre IS ideal para você expandir seus conhecimentos . Através de exemplos práticos e com forte conteúdo teórico, fornecemos as ferramentas certas para o você desenvolver. Assista!
         </p>
         <div className="lg:mt-10">
-          <iframe className="mx-auto w-[100%]" src="https://player.vimeo.com/video/732180675?h=db862d66aa" width="600" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="mx-auto w-[100%]" src="https://player.vimeo.com/video/732180675?h=db862d66aa" width="600" height="500" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
 
@@ -135,65 +135,71 @@ export default function Home() {
         <p className="text-white text-5xl font-bold">Comece a aprender agora</p>
         <p className="text-white text-lg leading-tight px-10 mt-5">Tenha acesso imediato ao conteúdo mais completo sobre integração sensorial, avaliação, tratamentos,etc,etc,etc.</p>
         <div className="flex flex-col lg:flex-row gap-8 mt-10 px-5 lg:px-0">
-          <div className="bg-[rgba(120,113,183,0.7)] relative rounded-xl px-10 py-5 lg:w-1/2 min-h-[600px] flex flex-col relative">
-            <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
-            <div>
-              <span className="text-white italic">R$</span><span className="text-white text-5xl font-bold italic">149,90</span>
+          <div className="bg-[rgba(120,113,183,0.7)] rounded-xl px-10 py-5 lg:w-1/2 min-h-[600px] flex flex-col">
+            <div className="flex flex-col flex-1">
+              <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
+              <div>
+                <span className="text-white italic">R$</span><span className="text-white text-5xl font-bold italic">149,90</span>
+
+              </div>
+              <div className="text-left text-white flex flex-col gap-1 my-10 ">
+                <p><span>✔️</span><span>Conteúdos básicos</span></p>
+                <p><span>✔️</span><span>Limite de visualização de 5 conteúdos por mês</span></p>
+                <p><span>✔️</span><span>15 dias de acesso grátis na pré-inscrição</span></p>
+                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
+                <p><span>✔️</span><span>Visualização completa dos artigos</span></p>
+                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
+
+              </div>
 
             </div>
-            <div className="text-left text-white flex flex-col gap-1 my-10 ">
-              <p><span>✔️</span><span>Conteúdos básicos</span></p>
-              <p><span>✔️</span><span>Limite de visualização de 5 conteúdos por mês</span></p>
-              <p><span>✔️</span><span>15 dias de acesso grátis na pré-inscrição</span></p>
-              <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-              <p><span>✔️</span><span>Visualização completa dos artigos</span></p>
-              <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-
-            </div>
-            <button className="absolute bottom-10 left-16 right-16 bg-[#f26321] px-10 pb-4 pt-3 rounded-xl text-white font-semibold text-xl">
+            <button className="bg-[#f26321] items-end px-10 pb-4 pt-3 rounded-xl text-white font-semibold text-xl">
               ASSINE AGORA
             </button>
           </div>
 
-          <div className="bg-[#7871b7] relative rounded-xl px-10 py-5 lg:w-1/2 lg:min-h-[600px] min-h-[650px] flex flex-col relative">
-            <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
-            <div>
-              <span className="text-white italic">R$</span><span className="text-white text-5xl font-bold italic">199,90</span>
+          <div className="bg-[#7871b7] rounded-xl px-10 py-5 lg:w-1/2 lg:min-h-[600px] min-h-[650px] flex flex-col">
+            <div className="flex flex-col flex-1">
+              <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
+              <div>
+                <span className="text-white italic">R$</span><span className="text-white text-5xl font-bold italic">199,90</span>
+
+              </div>
+              <div className="text-left text-white flex flex-col gap-1 my-10">
+                <p><span>✔️</span><span>Conteúdos básicos</span></p>
+                <p><span>✔️</span><span>Acesso ilimitado aos conteúdos</span></p>
+                <p><span>✔️</span><span>15 dias de acesso grátis na pré-inscrição</span></p>
+                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
+                <p><span>✔️</span><span>Visualização completa dos artigos</span></p>
+                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
+                <p><span>✔️</span><span>1 evento ao vivo no mês</span></p>
+                <p><span>✔️</span><span>Descontos nos cursos IS Descomplicada e cursos Joyce Marques</span></p>
+                <p><span>✔️</span><span>Download dos artigos</span></p>
+                <p><span>✔️</span><span>Desconto com parceiros em cursos e produtos terapêuticos</span></p>
+
+              </div>
 
             </div>
-            <div className="text-left text-white flex flex-col gap-1 my-10">
-              <p><span>✔️</span><span>Conteúdos básicos</span></p>
-              <p><span>✔️</span><span>Acesso ilimitado aos conteúdos</span></p>
-              <p><span>✔️</span><span>15 dias de acesso grátis na pré-inscrição</span></p>
-              <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-              <p><span>✔️</span><span>Visualização completa dos artigos</span></p>
-              <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-              <p><span>✔️</span><span>1 evento ao vivo no mês</span></p>
-              <p><span>✔️</span><span>Descontos nos cursos IS Descomplicada e cursos Joyce Marques</span></p>
-              <p><span>✔️</span><span>Download dos artigos</span></p>
-              <p><span>✔️</span><span>Desconto com parceiros em cursos e produtos terapêuticos</span></p>
-
-            </div>
-            <button className="absolute bottom-10 left-16 right-16 bg-[#f26321] px-10 pb-4 pt-3 rounded-xl text-white font-semibold text-xl">
+            <button className="bg-[#f26321] px-10 pb-4 pt-3 rounded-xl text-white font-semibold text-xl">
               ASSINE AGORA
             </button>
           </div>
         </div>
       </div>
       <footer className="bg-[#f26321]   px-10 lg:px-20 pt-5 pb-3">
-      <div className="max-w-[1100px] flex flex-col lg:flex-row lg:justify-between items-center mx-auto">
+        <div className="max-w-[1100px] flex flex-col lg:flex-row lg:justify-between items-center mx-auto">
 
-      
-        <div>
-          <Image
-            src="/images/logo2.png"
-            width="51px"
-            height="51px"
-          />
-        </div>
-        <div>
-          <p className="text-white text-xs lg:text-sm">2022 © IS Com Ciência. Todos os direitos reservados.</p>
-        </div>
+
+          <div>
+            <Image
+              src="/images/logo2.png"
+              width="51px"
+              height="51px"
+            />
+          </div>
+          <div>
+            <p className="text-white text-xs lg:text-sm">2022 © IS Com Ciência. Todos os direitos reservados.</p>
+          </div>
         </div>
       </footer>
     </div>
