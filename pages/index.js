@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Slide from "../components/Slide";
+
 
 export default function Home() {
   return (
@@ -44,35 +46,10 @@ export default function Home() {
             Você terá acesso à resumo dos melhores livros em IS, artigos e pesquisas mais relevantes para você ficar por dentro do que há de mais novo!
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-center gap-4 lg:justify-evenly">
-          <div>
-            <Image
-              src="/images/card.png"
-              width="200px"
-              height="296px"
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/card.png"
-              width="200px"
-              height="296px"
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/card.png"
-              width="200px"
-              height="296px"
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/card.png"
-              width="200px"
-              height="296px"
-            />
-          </div>
+        <div className="">
+
+            <Slide />
+            
         </div>
       </div>
 
