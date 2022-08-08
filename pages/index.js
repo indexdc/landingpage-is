@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-[#00d9d8]">
-      <div className="bg-bg1 bg-cover bg-top bg-no-repeat pb-20 lg:pb-32">
+      <div className="bg-bg1 bg-cover bg-top bg-no-repeat pb-10   lg:pb-20 lg:pb-32">
         <div className="bg-white pb-5 lg:pb-0 flex justify-between items-center">
           <div className="max-w-[1100px] px-10 m-auto px-10 flex flex-col lg:flex-row flex-1 justify-between">
             <div className="flex justify-center">
@@ -36,8 +36,8 @@ export default function Home() {
 
       <div className="max-w-[1100px] m-auto py-10 px-10">
         <div>
-          <p className="text-white text-5xl">Para você evoluir na</p>
-          <p className="text-white text-5xl leading-relaxed font-bold"><mark className="text-white bg-[#7570B3] p-0">carreira de TO!</mark></p>
+          <p className="text-white text-[2rem] font-semibold lg:text-5xl">Para você evoluir na</p>
+          <p className="text-white text-[2rem] lg:text-5xl font-bold"><mark className="text-white bg-[#7570B3] lg:leading-snug">carreira de TO!</mark></p>
         </div>
         <div className="text-white text-xl lg:w-1/2 mt-5 mb-8">
           <p>
@@ -81,13 +81,13 @@ export default function Home() {
 
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 flex flex-col justify-center">
-              <p className="text-white text-[54px] leading-[60px] font-bold">O que você está esperando?</p>
-              <p className="text-white text-lg my-5">Dentro da nossa comunidade você encontrará os melhores conteúdos sobre o universo da IS, além de trocar experiências reais com profissionais da área.
+              <p className="text-white text-[2rem] lg:text-[54px] leading-none lg:leading-[60px] font-bold">O que você está esperando?</p>
+              <p className="text-white text-base lg:text-xl my-5">Dentro da nossa comunidade você encontrará os melhores conteúdos sobre o universo da IS, além de trocar experiências reais com profissionais da área.
               </p>
-              <p className="text-white text-xl font-bold mb-5">
+              <p className="text-white text-base lg:text-xl font-bold mb-5">
                 Não existe nada mais poderoso que isso!
               </p>
-              <button className="bg-[#f26321] px-10 pb-4 pt-3 rounded-[39px] text-white font-semibold text-2xl">
+              <button className="bg-[#f26321] px-5 lg:px-10 pb-4 pt-3 rounded-[39px] text-white font-semibold lg:text-2xl">
                 NÃO QUERO MAIS PERDER TEMPO
               </button>
             </div>
@@ -112,9 +112,9 @@ export default function Home() {
             />
           </div>
           <div className="lg:w-1/2">
-            <p className="text-white text-4xl font-bold">Assista quando quiser.</p>
-            <p className="text-white text-4xl font-bold">De qualquer dispositivo.</p>
-            <p className="text-white text-base my-5">Baixe as aulas e assista offline no app. Assista no tablet, no computador, no celular ou em outros aparelhos, a qualquer hora, em qualquer lugar. Não existem mais desculpas para não começar agora.</p>
+            <p className="text-white text-[2rem] leading-none lg:leading-normal lg:text-4xl font-bold">Assista quando quiser.</p>
+            <p className="text-white text-[2rem] leading-none lg:leading-normal lg:text-4xl font-bold">De qualquer dispositivo.</p>
+            <p className="text-white text-base leading-tight lg:text-xl my-5">Baixe as aulas e assista offline no app. Assista no tablet, no computador, no celular ou em outros aparelhos, a qualquer hora, em qualquer lugar. Não existem mais desculpas para não começar agora.</p>
             <small className="text-white text-xs font-semibold">*A oferta de 15 dias grátis é válida somente para inscrições feitas nesta página.</small>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function Home() {
       <div className="max-w-[1100px] m-auto px-10 lg:py-20 text-center">
         <p className="text-white text-3xl lg:text-5xl leading-[50px] lg:leading-[85px] font-bold">Descubra por que</p>
         <p className="text-white text-3xl lg:text-5xl font-bold leading-[50px] lg:leading-[85px]"><mark className="text-white bg-[#f26321]">a IS Com Ciência</mark> foi feita para você.</p>
-        <p className="text-white text-lg leading-tight lg:px-10 mt-5">
+        <p className="text-white text-base lg:text-xl leading-tight lg:px-10 mt-5">
           Assista esse trecho de uma de nossas aulas e entenda porque nós somos a plataforma sobre IS ideal para você expandir seus conhecimentos . Através de exemplos práticos e com forte conteúdo teórico, fornecemos as ferramentas certas para o você desenvolver. Assista!
         </p>
         <div className="lg:mt-10">
@@ -132,10 +132,10 @@ export default function Home() {
       </div>
 
       <div className="max-w-[1100px] m-auto lg:px-10 py-20 text-center">
-        <p className="text-white text-5xl font-bold">Comece a aprender agora</p>
-        <p className="text-white text-lg leading-tight px-10 mt-5">Tenha acesso imediato ao conteúdo mais completo sobre integração sensorial, avaliação, tratamentos,etc,etc,etc.</p>
+        <p className="text-white text-3xl lg:text-5xl font-bold">Comece a aprender agora</p>
+        <p className="text-white text-xl leading-tight px-5 lg:px-10 mt-5">Tenha acesso imediato ao conteúdo mais completo sobre integração sensorial, avaliação, tratamentos,etc,etc,etc.</p>
         <div className="flex flex-col lg:flex-row gap-8 mt-10 px-5 lg:px-0">
-          <div className="bg-[rgba(120,113,183,0.7)] rounded-xl px-10 py-5 lg:w-1/2 min-h-[600px] flex flex-col">
+          <div className="bg-[rgba(120,113,183,0.7)] rounded-xl px-5 lg:px-10 py-5 lg:w-1/2 lg:min-h-[600px] flex flex-col">
             <div className="flex flex-col flex-1">
               <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
               <div>
@@ -158,7 +158,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="bg-[#7871b7] rounded-xl px-10 py-5 lg:w-1/2 lg:min-h-[600px] min-h-[650px] flex flex-col">
+          <div className="bg-[#7871b7] rounded-xl px-5 lg:px-10 py-5 lg:w-1/2 lg:min-h-[600px] flex flex-col">
             <div className="flex flex-col flex-1">
               <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
               <div>
