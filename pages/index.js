@@ -13,21 +13,20 @@ export default function Home() {
       </Head>
       <div className="bg-[#00d9d8]">
         <div className="bg-bg1 bg-cover bg-top bg-no-repeat pb-10  lg:pb-20 lg:pb-32">
-          <div className="bg-white pb-5 lg:pb-0 flex justify-between items-center">
-            <div className="max-w-[1100px] m-auto px-10 flex flex-col lg:flex-row flex-1 justify-between">
+          <div className="bg-white lg:pb-0 flex justify-between items-center">
+            <div className="max-w-[1100px] m-auto px-10 flex flex-1 justify-between">
               <div className="flex justify-center">
                 <Image
                   src="/images/logo.png"
-                  width="128px"
-                  height="128px"
+                  width="80px"
+                  height="80px"
                 />
               </div>
-              <div className="text-[#7570B3] lg:px-20 flex flex-col lg:flex-row flex-1 justify-center items-center gap-10 font-semibold">
-                <p>SABER MAIS</p>
-                <button className="text-white font-semibold bg-[#6bc9c9] px-10 py-4 rounded-lg">
+              <div className="text-[#7570B3] lg:px-20 flex flex-1 justify-end lg:justify-end items-center gap-10 font-semibold">
+                <button className="text-white flex-end font-semibold bg-[#6bc9c9] px-8 py-3 rounded-lg">
                   <Link href="#sale">
                     <a>
-                      Faça sua Inscrição!
+                      Faça sua Assinatura!
                     </a>
                   </Link>
                 </button>
@@ -79,7 +78,7 @@ export default function Home() {
                 <p className="text-white text-base lg:text-xl my-5">Dentro da nossa comunidade você encontrará os melhores conteúdos sobre o universo da IS, além de trocar experiências reais com profissionais da área.
                 </p>
                 <p className="text-white text-base lg:text-xl font-bold mb-5">
-                  Nós TO's sabemos o quanto isso é poderoso
+                  Nós TO&apos;s sabemos o quanto isso é poderoso
                 </p>
                 <button className="bg-[#f26321] px-5 lg:px-10 pb-4 pt-3 rounded-[39px] text-white font-semibold lg:text-2xl">
                   <Link href="#sale">
