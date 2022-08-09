@@ -8,15 +8,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <Script
-          async
-          src="https://js.stripe.com/v3/pricing-table.js"
-        />
+        <title>IS com Ciência | Assine</title>
+        <meta description="Assine agora a plataforma IS Com Ciência e decole no mundo da Integração Sensorial"/>
       </Head>
       <div className="bg-[#00d9d8]">
-        <div className="bg-bg1 bg-cover bg-top bg-no-repeat pb-10   lg:pb-20 lg:pb-32">
+        <div className="bg-bg1 bg-cover bg-top bg-no-repeat pb-10  lg:pb-20 lg:pb-32">
           <div className="bg-white pb-5 lg:pb-0 flex justify-between items-center">
-            <div className="max-w-[1100px] px-10 m-auto px-10 flex flex-col lg:flex-row flex-1 justify-between">
+            <div className="max-w-[1100px] m-auto px-10 flex flex-col lg:flex-row flex-1 justify-between">
               <div className="flex justify-center">
                 <Image
                   src="/images/logo.png"
@@ -137,7 +135,7 @@ export default function Home() {
           <p className="text-[#00caca] text-xl leading-tight px-5 lg:px-10 mt-5">Tenha acesso imediato a conteúdos sobre Integração Sensorial, incluindo avaliação, tratamentos, pesquisas científicas e muito mais! </p>
         </div>
         <div id="sale" className="w-full bg-white py-8">
-          <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+          <Script async src="https://js.stripe.com/v3/pricing-table.js" />
           <stripe-pricing-table pricing-table-id="prctbl_1LUtENHkgARQtT4YHOakHBT8"
             publishable-key="pk_live_51LT3HgHkgARQtT4Y4TqMcWip7g0PqrFLyfvFw5tY1OKmdjxROd2Y6YcTJ2Wsqbe0X7a9YV0VpqJ2oKXkHKwjk3gB00Fj1ptsfr">
           </stripe-pricing-table>
