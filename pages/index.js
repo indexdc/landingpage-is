@@ -1,9 +1,17 @@
+import Head from "next/head";
 import Image from "next/image";
 import Slide from "../components/Slide";
-
+import Script from 'next/script';
 
 export default function Home() {
   return (
+    <>
+    <Head>
+        <Script
+            async
+            src="https://js.stripe.com/v3/pricing-table.js"
+        />
+    </Head>
     <div className="bg-[#00d9d8]">
       <div className="bg-bg1 bg-cover bg-top bg-no-repeat pb-10   lg:pb-20 lg:pb-32">
         <div className="bg-white pb-5 lg:pb-0 flex justify-between items-center">
@@ -108,60 +116,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-[1100px] m-auto lg:px-10 py-20 text-center">
-        <p className="text-white text-3xl lg:text-5xl font-bold">Comece a aprender agora</p>
-        <p className="text-white text-xl leading-tight px-5 lg:px-10 mt-5">Tenha acesso imediato ao conteúdo mais completo sobre integração sensorial, avaliação, tratamentos,etc,etc,etc.</p>
-        <div className="flex flex-col lg:flex-row gap-8 mt-10 px-5 lg:px-0">
-          <div className="bg-[rgba(120,113,183,0.7)] rounded-xl px-5 lg:px-10 py-5 lg:w-1/2 lg:min-h-[600px] flex flex-col">
-            <div className="flex flex-col flex-1">
-              <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
-              <div>
-                <span className="text-white italic">R$</span><span className="text-white text-5xl font-bold italic">149,90</span>
-
-              </div>
-              <div className="text-left text-white flex flex-col gap-1 my-10 ">
-                <p><span>✔️</span><span>Conteúdos básicos</span></p>
-                <p><span>✔️</span><span>Limite de visualização de 5 conteúdos por mês</span></p>
-                <p><span>✔️</span><span>15 dias de acesso grátis na pré-inscrição</span></p>
-                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-                <p><span>✔️</span><span>Visualização completa dos artigos</span></p>
-                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-
-              </div>
-
-            </div>
-            <button className="bg-[#f26321] items-end px-10 pb-4 pt-3 rounded-xl text-white font-semibold text-xl">
-              ASSINE AGORA
-            </button>
-          </div>
-
-          <div className="bg-[#7871b7] rounded-xl px-5 lg:px-10 py-5 lg:w-1/2 lg:min-h-[600px] flex flex-col">
-            <div className="flex flex-col flex-1">
-              <p className="font-medium text-[#00caca] text-2xl">MENSAL</p>
-              <div>
-                <span className="text-white italic">R$</span><span className="text-white text-5xl font-bold italic">199,90</span>
-
-              </div>
-              <div className="text-left text-white flex flex-col gap-1 my-10">
-                <p><span>✔️</span><span>Conteúdos básicos</span></p>
-                <p><span>✔️</span><span>Acesso ilimitado aos conteúdos</span></p>
-                <p><span>✔️</span><span>15 dias de acesso grátis na pré-inscrição</span></p>
-                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-                <p><span>✔️</span><span>Visualização completa dos artigos</span></p>
-                <p><span>✔️</span><span>Acesso às aulas legendadas</span></p>
-                <p><span>✔️</span><span>1 evento ao vivo no mês</span></p>
-                <p><span>✔️</span><span>Descontos nos cursos IS Descomplicada e cursos Joyce Marques</span></p>
-                <p><span>✔️</span><span>Download dos artigos</span></p>
-                <p><span>✔️</span><span>Desconto com parceiros em cursos e produtos terapêuticos</span></p>
-
-              </div>
-
-            </div>
-            <button className="bg-[#f26321] px-10 pb-4 pt-3 rounded-xl text-white font-semibold text-xl">
-              ASSINE AGORA
-            </button>
-          </div>
-        </div>
+      <div className="w-full m-auto lg:px-10 pt-20 pb-8 text-center bg-white">
+        <p className="text-[#00caca] text-3xl lg:text-5xl font-bold">Comece a aprender agora</p>
+        <p className="text-[#00caca] text-xl leading-tight px-5 lg:px-10 mt-5">Tenha acesso imediato ao conteúdo mais completo sobre integração sensorial, avaliação, tratamentos,etc,etc,etc.</p>
+      </div>
+      <div className="w-full bg-white py-8">
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table pricing-table-id="prctbl_1LUtENHkgARQtT4YHOakHBT8"
+        publishable-key="pk_live_51LT3HgHkgARQtT4Y4TqMcWip7g0PqrFLyfvFw5tY1OKmdjxROd2Y6YcTJ2Wsqbe0X7a9YV0VpqJ2oKXkHKwjk3gB00Fj1ptsfr">
+        </stripe-pricing-table>
       </div>
       <footer className="bg-[#f26321]   px-10 lg:px-20 pt-5 pb-3">
         <div className="max-w-[1100px] flex flex-col lg:flex-row lg:justify-between items-center mx-auto">
@@ -180,5 +143,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </>
   )
 }
