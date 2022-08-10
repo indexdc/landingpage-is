@@ -79,7 +79,7 @@ export default function Test() {
                 <p className="text-white text-base lg:text-xl my-5">Dentro da nossa comunidade você encontrará os melhores conteúdos sobre o universo da IS, além de trocar experiências reais com profissionais da área.
                 </p>
                 <p className="text-white text-base lg:text-xl font-bold mb-5">
-                  Nós TO's sabemos o quanto isso é poderoso
+                  Nós TO&apos;s sabemos o quanto isso é poderoso
                 </p>
                 <button className="bg-[#f26321] px-5 lg:px-10 pb-4 pt-3 rounded-[39px] text-white font-semibold lg:text-2xl">
                   <Link href="#sale">
