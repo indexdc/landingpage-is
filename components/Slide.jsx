@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 export default function Slide() {
     var settings = {
         dots: true,
-        arrows: false,
+        arrows: true,
         infinite: true,
         centerMode: false,
         speed: 500,
@@ -28,7 +28,7 @@ export default function Slide() {
             {
                 breakpoint: 1025,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
                     adaptiveHeight: true,
@@ -37,7 +37,7 @@ export default function Slide() {
             {
                 breakpoint: 770,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
                     adaptiveHeight: true,
@@ -47,7 +47,7 @@ export default function Slide() {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     slidesToScroll: 1,
                     infinite: true,
                     adaptiveHeight: true,
