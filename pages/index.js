@@ -124,8 +124,8 @@ export default function Home() {
             Assista a esse trecho de uma de nossas aulas!
             Conteúdo com embasamento teórico e acessível para você expandir seus conhecimentos.
           </p>
-          <div className="lg:mt-10">
-            <iframe className="mx-auto w-[100%]" src="https://player.vimeo.com/video/732180675?h=db862d66aa" width="600" height="500" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+          <div className="lg:mt-10 py-5">
+            <iframe className="mx-auto w-[100%] lg:min-h-[600px]" width="560" height="315" src="https://www.youtube.com/embed/kg5pa0qGL10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
 

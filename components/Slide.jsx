@@ -60,52 +60,52 @@ export default function Slide() {
 
     return (
         <div>
-            <Slider {...settings} className= "">
+            <Slider {...settings} className="">
                 <div className='mx-3'>
                     <Image
-                        src="/images/card.png"
+                        src="/images/cards/card1.jpg"
                         width="200px"
                         height="296px"
                     />
                 </div>
                 <div className='mx-3'>
                     <Image
-                        src="/images/card.png"
+                        src="/images/cards/card2.jpg"
                         width="200px"
                         height="296px"
                     />
                 </div>
                 <div className='mx-3'>
                     <Image
-                        src="/images/card.png"
+                        src="/images/cards/card3.jpg"
                         width="200px"
                         height="296px"
                     />
                 </div>
                 <div className='mx-3'>
                     <Image
-                        src="/images/card.png"
+                        src="/images/cards/card8.jpg"
                         width="200px"
                         height="296px"
                     />
                 </div>
                 <div className='mx-3'>
                     <Image
-                        src="/images/card.png"
+                        src="/images/cards/card5.jpg"
                         width="200px"
                         height="296px"
                     />
                 </div>
                 <div className='mx-3'>
                     <Image
-                        src="/images/card.png"
+                        src="/images/cards/card6.jpg"
                         width="200px"
                         height="296px"
                     />
                 </div>
                 <div className='mx-3'>
                     <Image
-                        src="/images/card.png"
+                        src="/images/cards/card7.jpg"
                         width="200px"
                         height="296px"
                     />
