@@ -28,9 +28,6 @@ function MyApp({ Component, pageProps }) {
       fbq('init', '1495444717580179');
       fbq('track', 'PageView');`}
     </Script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1431457984030108&ev=PageView&noscript=1"
-    /></noscript>
     <Component {...pageProps} />
   </>
   )
