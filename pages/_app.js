@@ -1,9 +1,13 @@
 import '../styles/globals.css';
 import Script from 'next/script';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   return (
   <>
+    <Head>
+      <meta name="facebook-domain-verification" content="bf7ic9hir9clvhxk71ju0rwxkk0cdz" />
+    </Head>
     <Script strategy="lazyOnload" id="Analytics" src={`https://www.googletagmanager.com/gtag/js?id=UA-235363606-1`} />
     <Script strategy="lazyOnload" id="JivoChat" src={`//code.jivosite.com/widget/0eylLUOEWX`} />
     <Script strategy="lazyOnload" id="Analytics-1">
