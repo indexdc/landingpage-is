@@ -4,13 +4,16 @@ import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   return (
-  <>
-    <Head>
-      <meta name="facebook-domain-verification" content="bf7ic9hir9clvhxk71ju0rwxkk0cdz" />
-    </Head>
-    <Script strategy="lazyOnload" id="Analytics" src={`https://www.googletagmanager.com/gtag/js?id=UA-235363606-1`} />
-    <Script strategy="lazyOnload" id="JivoChat" src={`//code.jivosite.com/widget/0eylLUOEWX`} />
-    <Script strategy="lazyOnload" id="Analytics-1">
+    <>
+      <Head>
+        <meta name="facebook-domain-verification" content="bf7ic9hir9clvhxk71ju0rwxkk0cdz" />
+      </Head>
+      <Script strategy="lazyOnload" id="Analytics" src={`https://www.googletagmanager.com/gtag/js?id=UA-235363606-1`} />
+      <Script strategy="lazyOnload" id="var-movidesk">
+        {`var mdChatClient="8A9698621E7D42918F0C268392D644F6";`}
+      </Script>
+      <Script strategy="lazyOnload" id="script-movidesk" src="https://chat.movidesk.com/Scripts/chat-widget.min.js" />
+      <Script strategy="lazyOnload" id="Analytics-1">
         {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -19,9 +22,9 @@ function MyApp({ Component, pageProps }) {
             page_path: window.location.pathname,
             });
         `}
-    </Script>
-    <Script id="Meta-Pixel">
-      {`!function(f,b,e,v,n,t,s)
+      </Script>
+      <Script id="Meta-Pixel">
+        {`!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
       if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -31,9 +34,9 @@ function MyApp({ Component, pageProps }) {
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1495444717580179');
       fbq('track', 'PageView');`}
-    </Script>
-    <Component {...pageProps} />
-  </>
+      </Script>
+      <Component {...pageProps} />
+    </>
   )
 }
 
