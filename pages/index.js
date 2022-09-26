@@ -4,12 +4,11 @@ import Slide from "../components/Slide";
 import Script from 'next/script';
 import Link from 'next/link'
 import { motion } from 'framer-motion';
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 
 export default function Home() {
-  const ref = useRef(null)
-
+  const ref = useRef(null);
 
   return (
     <>
@@ -182,17 +181,17 @@ export default function Home() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <p className="text-[#00caca] text-3xl lg:text-5xl font-bold">Comece a aprender agora</p>
-            <p className="text-[#00caca] text-xl leading-tight px-5 lg:px-10 mt-5">Tenha acesso imediato a conteúdos sobre Integração Sensorial, incluindo avaliação, tratamentos, pesquisas científicas e muito mais! </p>
+            <p className="text-[#00caca] text-xl leading-tight px-5 lg:px-10 mt-5">Tenha acesso imediato a conteúdos sobre Integração Sensorial, incluindo avaliação, tratamentos, pesquisas científicas e muito mais!</p>
+            <p className="text-[#00caca] text-xl leading-tight px-5 lg:px-10 mt-5">Informe seus dados abaixo para prosseguir:</p>
 
           </motion.div>
         </div>
-        <div id="sale" className="w-full bg-white py-8">
+        <div id="sale" className="w-full bg-white py-8 px-10">
           <div>
-
-            <Script async src="https://js.stripe.com/v3/pricing-table.js" />
-            <stripe-pricing-table pricing-table-id="prctbl_1LUtENHkgARQtT4YHOakHBT8"
-              publishable-key="pk_live_51LT3HgHkgARQtT4Y4TqMcWip7g0PqrFLyfvFw5tY1OKmdjxROd2Y6YcTJ2Wsqbe0X7a9YV0VpqJ2oKXkHKwjk3gB00Fj1ptsfr">
-            </stripe-pricing-table>
+            <div role="main" className="w-full lg:max-w-4xl mx-auto" id="2022-registro-oportunidade-eedf6a5f75fda8689ca3"></div>
+            <Script onLoad={() => {
+                new window.RDStationForms('2022-registro-oportunidade-eedf6a5f75fda8689ca3', 'UA-235363606-1').createForm()
+              }} src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></Script>
           </div>
         </div>
         <footer className="bg-[#f26321]   px-10 lg:px-20 pt-5 pb-3">
