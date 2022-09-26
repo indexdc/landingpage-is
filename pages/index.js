@@ -180,13 +180,13 @@ export default function Home() {
             transition={{ duration: 1, delay: 0 }}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <p className="text-[#00caca] text-3xl lg:text-5xl font-bold">Comece a aprender agora</p>
+            <p className="text-[#f26321] text-3xl lg:text-5xl font-bold">Comece a aprender agora</p>
             <p className="text-[#00caca] text-xl leading-tight px-5 lg:px-10 mt-5">Tenha acesso imediato a conteúdos sobre Integração Sensorial, incluindo avaliação, tratamentos, pesquisas científicas e muito mais!</p>
-            <p className="text-[#00caca] text-xl leading-tight px-5 lg:px-10 mt-5">Informe seus dados abaixo para prosseguir:</p>
+            <p className="text-[#f26321] text-xl leading-tight px-5 lg:px-10 mt-5">Informe seus dados abaixo para prosseguir:</p>
 
           </motion.div>
         </div>
-        <div id="sale" className="w-full bg-white py-8 px-10">
+        <div id="sale" className="w-full bg-white pb-20 px-10">
           <div>
             <div role="main" className="w-full lg:max-w-4xl mx-auto" id="2022-registro-oportunidade-eedf6a5f75fda8689ca3"></div>
             <Script onLoad={() => {
