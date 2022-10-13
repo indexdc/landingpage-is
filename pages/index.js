@@ -28,10 +28,17 @@ export default function Home() {
                 />
               </div>
               <div className="text-[#7570B3] lg:px-20 flex flex-1 justify-end lg:justify-end items-center gap-10 font-semibold">
-                <button className="text-white flex-end font-semibold bg-[#6bc9c9] px-8 py-3 rounded-lg">
+
+                <button className="text-[#f26321] hover:bg-slate-50 hover:border-[#f26321] border-transparent border-2 hover:text-[#f26321] hover:shadow-md transition-all duration-200 flex-end font-semibold bg-white px-8 py-3 rounded-md">
+                    <a href="https://app.iscomciencia.com.br/">
+                      Já sou Assinante
+                    </a>
+                </button>
+
+                <button className="text-white flex-end font-semibold bg-[#f26321]  hover:bg-slate-50 hover:text-[#f26321] hover:shadow-md transition-all duration-200 px-8 py-3 rounded-md">
                   <Link href="#sale">
                     <a>
-                      Faça sua Assinatura!
+                      ASSINE AGORA
                     </a>
                   </Link>
                 </button>
@@ -53,7 +60,7 @@ export default function Home() {
               <p className="text-white mb-10 font-medium text-xl">
                 Assine agora a plataforma IS Com Ciência e decole no mundo da Integração Sensorial
               </p>
-              <button className="bg-[#f26321] px-10 lg:px-24 pb-4 pt-3 rounded-[39px] text-white font-semibold text-xl lg:text-2xl" >
+              <button className="bg-[#f26321]  hover:bg-slate-50 hover:text-[#f26321] hover:shadow-md transition-all duration-200 px-10 lg:px-24 pb-4 pt-3 rounded-md text-white font-semibold text-xl lg:text-2xl" >
                 <Link href="#sale">
                   <a>
                     Assine já!
@@ -106,7 +113,7 @@ export default function Home() {
                 <p className="text-white text-base lg:text-xl font-bold mb-5">
                   Nós TOs sabemos o quanto isso é poderoso
                 </p>
-                <button className="bg-[#f26321] px-5 lg:px-10 pb-4 pt-3 rounded-[39px] text-white font-semibold lg:text-2xl">
+                <button className="bg-[#f26321]  hover:bg-slate-50 hover:text-[#f26321] hover:shadow-md transition-all duration-200 px-5 lg:px-10 pb-4 pt-3 rounded-md text-white font-semibold lg:text-2xl">
                   <Link href="#sale">
                     <a>
                       Quero participar agora!
