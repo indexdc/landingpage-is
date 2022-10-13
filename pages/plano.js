@@ -33,9 +33,13 @@ export default function Plano() {
         <div id="sale" className="w-full bg-white py-8">
           <div>
             <Script async src="https://js.stripe.com/v3/pricing-table.js" />
-            <stripe-pricing-table pricing-table-id="prctbl_1LUtENHkgARQtT4YHOakHBT8"
+            {/* <stripe-pricing-table pricing-table-id="prctbl_1LUtENHkgARQtT4YHOakHBT8"
               publishable-key="pk_live_51LT3HgHkgARQtT4Y4TqMcWip7g0PqrFLyfvFw5tY1OKmdjxROd2Y6YcTJ2Wsqbe0X7a9YV0VpqJ2oKXkHKwjk3gB00Fj1ptsfr">
-            </stripe-pricing-table>
+            </stripe-pricing-table> */}
+            <stripe-pricing-table pricing-table-id="prctbl_1LsZrRKjphwQv85saDzHgvfl"
+              publishable-key="pk_live_51LnnUXKjphwQv85sGu3j3pxp96gYWGsQFuMyMkhqhlAOCU2MxHlxGkZRFK5B5r7ZGdKQ3EGFnhLi72bxZsY1Nh8v00at0giBHz">
+              </stripe-pricing-table>
+              {/** <!-- Tabela nova -->*/}
           </div>
         </div>
         <footer className="bg-[#f26321]   px-10 lg:px-20 pt-5 pb-3">
